@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* default */
+* {margin:0;padding:0;}
+html {height:100%;font-size:62.5%;}
+body {height:100%;color:#333;font:14px/1.5 'NanumSquareRound';-webkit-text-size-adjust:none;word-break:keep-all;}
+a {color:inherit;text-decoration:none;}
+li {list-style:none;}
+table {width:100%;border-collapse:collapse;border:0;table-layout:fixed;}
+colgroup {background:none;}
+input, select, textarea, button {font:14px/1.5 'NanumSquareRound';font-size:inherit;}
+fieldset, img {border:0;}
+img {vertical-align:top;}
+label, td img {vertical-align:middle;}
+h1,h2,h3,h4,h5,strong,b,th {font-weight:700;}
+legend, caption, .hidden {position:absolute;z-index:-1;font-size:0;}
+address, em {font-style:normal;}
+button {overflow:visible;cursor:pointer;background:none;border:0;border-radius:0;}
+button::-moz-focus-inner {padding:0;border:0;}
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section {display:block;}
+
+.inputTxt, select, textarea {
+	height: 36px;
+	padding: 0 10px;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-radius: 3px;
+	color: #666;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+}
+select {
+	background:#fff url('/resource/www/resource/images/bg_select.gif') no-repeat 100% 50%;
+}
+textarea {
+	padding: 10px;
+	box-sizing: border-box;
+	resize: none;
+}
+.inputChk {display: inline-block;}
+.inputChk input {vertical-align: -1px;}
+.inputRadio {
+	display: inline-block;
+	position: relative;
+}
+.inputRadio input {
+	position: absolute;
+	visibility: hidden;
+}
+.inputRadio i {
+	display: inline-block;
+	border: 1px solid #d0d0d0;
+	width: 15px; height: 15px;
+	margin: 0 5px 0 0;
+	background-image: url('/resource/www/resource/images/bg_radio.png');
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+.inputRadio input:checked ~ i {
+	background-color: #486ac2;
+	background-position: 100% 0;
+	border-color: #486ac2;
+}
+.inputRadio span {
+	display: inline-block;;
+	vertical-align: middle;
+}
+.inputRadio + .inputRadio {
+	margin-left: 20px;
+}
+
+.swiper-container-horizontal {overflow: hidden;}
+.swiper-wrapper {
+	position: relative;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.swiper-slide {flex-shrink:0;}
+
+#ui-datepicker-div {display:none;border:1px solid #bbb;background:#fff;border-radius:9px;}
+.ui-datepicker-trigger {position:absolute;right:12px;top:0;width:40px;height:40px;border-color:#bbb;background:#eee;}
+.ui-datepicker-trigger img {width:20px;height:20px;}
+.ui-datepicker {width:275px;}
+.ui-datepicker .ui-datepicker-header {position:relative;padding:13px 0;font-size: 16px;color:#111;}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {position:absolute;top:13px;width:15px;height:15px}
+.ui-state-disabled {cursor:default !important;pointer-events:none;}
+.ui-icon {text-indent:-5000px;overflow:hidden}
+.ui-datepicker-prev span, .ui-datepicker-next span {display:inline-block;width:10px;height:10px;border-top:1px solid #444;border-right:1px solid #444;-webkit-transform:rotate(-135deg);-moz-transform:rotate(-135deg);transform:rotate(-135deg);}
+.ui-datepicker-next span {transform: rotate(45deg);-webkit-transform:rotate(45deg);}
+.ui-datepicker .ui-datepicker-prev {left:12px}
+.ui-datepicker .ui-datepicker-next {right:12px}
+.ui-datepicker .ui-datepicker-title {line-height:16px;text-align:center;color:#111}
+.ui-datepicker .ui-datepicker-title select {font-size:1em;margin:1px 0}
+.ui-datepicker table {width:90%;border-collapse:collapse;margin:auto;font-size:12px}
+.ui-datepicker th {padding:.7em .3em;text-align:center;border:0;}
+.ui-datepicker th:first-child {color:#dc8572;}
+.ui-datepicker th:last-child {color:#7093f6;}
+.ui-datepicker td {border:0;padding:2px}
+.ui-datepicker td.ui-datepicker-today a {background-color:#ea4a3e;border:none;color:#fff;}
+.ui-datepicker td span,
+.ui-datepicker td a {display:block;margin:0 auto;color:#111;font-size:13px;width:33px;height:27px;border:1px solid #ddd;border-radius:5px;line-height:24px;text-align:center;text-decoration:none;box-sizing:border-box;}
+.ui-datepicker .ui-datepicker-buttonpane {margin-top:5px;text-align:center;border-top:1px solid #eee}
+.ui-datepicker .ui-datepicker-buttonpane button {overflow:visible}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {display:none}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-close {width:100%;overflow:hidden;border:0;display:inline-block;height:35px;background:#f6f6f6;font-size:13px;color:#111;border-radius:0 0 10px 10px;}
+
+
+/* layout */
+#header {position:fixed;top:0;right:0;left:0;height:90px;background:rgba(0,0,0,.5);z-index:100;}
+#header h1 {height:100%;margin-left:30px;}
+#header h1:after {content:"";display:inline-block;height:100%;vertical-align:middle;}
+#header h1 a {display:inline-block;vertical-align:middle;}
+
+#gnb {position:absolute;top:0;right:40px;}
+#gnb .mo {display:none;}
+#gnb ul {height:90px;}
+#gnb ul:after {content:"";display:inline-block;height:100%;vertical-align:middle;}
+#gnb li {display:inline-block;margin-left:35px;color:#fff;font-size:24px;font-weight:800;vertical-align:middle;}
+
+#footer {padding:15px 0;background:#0d0d0d;border-top:1px solid #2c2c2c;text-align:center;}
+#footer nav {display:inline-block;margin-right:110px;padding-left:130px;background:url('../images/img_logo_foot.png') no-repeat 0 50%;color:#808080;font-size:15px;font-weight:700;}
+#footer nav a ~ a {margin-left:35px;}
+#footer .copy {display:inline-block;font-size:13px;color:#404040;}
