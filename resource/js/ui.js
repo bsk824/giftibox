@@ -57,31 +57,12 @@ function fontSize() {
 		html.css('');
 	}
 }
-function tabActive(obj, idx, type) {
-	if(typeof obj !== 'string') {
-		var $this = $(obj);
-		var idx = $this.parent().index();
-		var txt = $this.text();
-		var tabContents = $this.closest('[class*="tabMenu"]').next('.tabContents');
+function scrollMov(obj, sec) {
+	var $this = $(obj);
+	var section = $(sec);
+	$this.parent().addClass('active').siblings().removeClass('active');
+	$('html, body').animate({'scrollTop' : section.offset().top}, 300);
 
-		if(type === true && !$this.parent().hasClass('active')) event.preventDefault();
-
-		$this.parent().addClass('active').siblings().removeClass('active');
-		
-		if($this.closest('[class*="tabMenu"]').find('.tabBtn').is(':visible')) {
-			$this.parent().parent().slideUp(200).closest('.tabMenu').find('.tabBtn').text(txt);
-		}
-	} else {
-		var tab = $('#' + obj);
-		var menu = tab.find('li');
-		var tabContents = tab.next('.tabContents');
-		
-		idx = idx - 1;
-
-		menu.eq(idx).addClass('active').siblings().removeClass('active');
-	}
-	
-	tabContents.find('> .tabCont').eq(idx).addClass('active').siblings().removeClass('active');
 }
 
 var slideObj = {};
