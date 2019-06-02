@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=2.0, minimum-scale=1.0, target-densitydpi=medium-dpi">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="resource/font/nanumsquareround.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/resp.css" media="screen and (max-width: 1070px)">
+	<script type="text/javascript" src="resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="resource/js/swiper.min.js"></script>
+	<script type="text/javascript" src="resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="wrap">
+
+		<header id="header">
+			<h1><a href="/"><img src="resource/images/img_logo.png" alt=""></a></h1>
+			<nav id="gnb">
+				<p class="mo">
+					<a href="#">마이페이지</a>
+					<a href="#">로그인</a>
+				</p>
+				<ul class="pc">
+					<li><a href="#" onclick="scrollMov(this,'.section1'); return false;">NOW PLAYING</a></li>
+					<li><a href="#" onclick="scrollMov(this,'.section3'); return false;">COMING SOON</a></li>
+					<li><a href="#">MY PAGE</a></li>
+					<li><a href="#">LOGIN</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="container">
+			
+			<section class="section">
+				<h2 class="pageTitle">회원가입</h2>
+
+				<div class="tableType1 typeWrite">
+					<table>
+						<caption>회원가입 입력</caption>
+						<colgroup>
+							<col class="writeTh">
+							<col>
+						</colgroup>
+						<tbody>
+							<tr>
+								<th scope="row">아이디</th>
+								<td><input type="text" class="inputTxt"></td>
+							</tr>
+							<tr>
+								<th scope="row">비밀번호</th>
+								<td><input type="password" class="inputTxt"></td>
+							</tr>
+							<tr>
+								<th scope="row">비밀번호 확인</th>
+								<td><input type="password" class="inputTxt"></td>
+							</tr>
+							<tr>
+								<th scope="row">이름</th>
+								<td><input type="text" class="inputTxt"></td>
+							</tr>
+							<tr>
+								<th scope="row">메일</th>
+								<td>
+									<span class="row email">
+										<span class="cell"><input type="text" class="inputTxt"></span>
+										<span class="cell">@</span>
+										<span class="cell">
+											<select name="" id="">
+												<option value="">선택하기</option>
+												<option value="">Naver.com</option>
+												<option value="">Naver.com</option>
+											</select>
+										</span>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">생일</th>
+								<td>
+									<span class="row birth">
+										<span class="cell">
+											<select name="" id="">
+												<option value="">년</option>
+											</select>
+										</span>
+										<span class="cell">
+											<select name="" id="">
+												<option value="">월</option>
+											</select>
+										</span>
+										<span class="cell">
+											<select name="" id="">
+												<option value="">일</option>
+											</select>
+										</span>
+									</span>
+									<label class="inputRadio">
+										<input type="radio">
+										<span>남자</span>
+									</label>
+									<label class="inputRadio">
+										<input type="radio">
+										<span>여자</span>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">휴대폰</th>
+								<td>
+									<label class="inputRadio">
+										<input type="radio">
+										<span>SKT</span>
+									</label>
+									<label class="inputRadio">
+										<input type="radio">
+										<span>KT</span>
+									</label>
+									<label class="inputRadio">
+										<input type="radio">
+										<span>LGU+</span>
+									</label>
+									<label class="inputRadio">
+										<input type="radio">
+										<span>알뜰폰</span>
+									</label>
+
+									<div class="phoneInput">
+										<span class="row phone">
+											<span class="cell"><input type="text" class="inputTxt"></span>
+											<span class="cell">-</span>
+											<span class="cell"><input type="text" class="inputTxt"></span>
+											<span class="cell">-</span>
+											<span class="cell"><input type="text" class="inputTxt"></span>
+										</span>
+										<a href="#" class="btnType2">인증받기</a>
+									</div>
+
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">마케팅 수신동의 (선택)</th>
+								<td>
+									<label class="inputChk">
+										<input type="checkbox">
+										<span>이메일</span>
+									</label>
+									<label class="inputChk">
+										<input type="checkbox">
+										<span>SMS</span>
+									</label>
+									<a href="#" class="linkType1">*자세히보기</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div>
+					입력한 연락처와 메일로 다양한 혜택과 이벤트 및 프로모션 정보, 광고에 대한 안내를 받으실 수 있습니다.
+					이용목적 : 이벤트 및 프로모션/혜택 알림 서비스 제공 수집항목 : 이메일, 휴대폰 번호 
+					보유기간 : 회원탈퇴 또는 개인정보 유효기간 도래 시까지 보관, 단, 관계 법령에 따라 고객님의 개인정보를 보존하여야 하는 경우,<br>
+					회사는 해당 법령에서 정한 기간 동안 보관합니다. (거래정보와 관련된 내용은 수신동의 여부와 관계없이 발송됩니다.)
+				</div>
+
+				<div class="btnWrap">
+					<button type="button" class="btnType3">되돌아가기</button>
+					<button type="button" class="btnType1">확인하기</button>
+				</div>
+
+			</section>
+
+		</div>
+
+		<footer id="footer">
+			<nav>
+				<a href="#">이용약관</a>
+				<a href="#">개인정보 처리방침</a>
+				<a href="#">상품권 구매문의</a>
+				<a href="#">고객센터/문의하기</a>
+			</nav>
+			<small class="copy">Copyright &copy; 2019 by giftibox.com All rights reserved.</small>
+		</footer>
+
+	</div>
+</body>
+</html>
