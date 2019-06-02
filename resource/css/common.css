@@ -86,7 +86,7 @@ textarea {
 	display: inline-block;;
 	vertical-align: middle;
 }
-.inputChk + .inputChk
+.inputChk + .inputChk,
 .inputRadio + .inputRadio {
 	margin-left: 20px;
 }
@@ -144,6 +144,7 @@ textarea {
 #gnb a:hover {color:#fff227;}
 #gnb .active a:after{width: 90%;}
 
+#container {min-height:800px;}
 #footer {padding:15px 0;background:#0d0d0d;border-top:1px solid #2c2c2c;text-align:center;}
 #footer nav {display:inline-block;margin-right:110px;padding-left:130px;background:url('../images/img_logo_foot.png') no-repeat 0 50%;color:#808080;font-size:15px;font-weight:700;}
 #footer nav a ~ a {margin-left:35px;}
@@ -151,9 +152,9 @@ textarea {
 
 .bgCon {background:#1a1a1a;}
 .section {max-width:1070px;margin:0 auto;}
+#container > .section:last-child {padding-bottom:100px;}
 .section:after {content:"";display:block;clear:both;}
-#container > .section:last-child {padding-bottom:150px;}
-.pageTitle {margin:140px 0 20px;font-size:44px;font-weight:800;line-height:1.2;}
+.pageTitle {padding:140px 0 20px;font-size:44px;font-weight:800;line-height:1.2;}
 .subTitle {padding:30px 0 0;text-align:center;font-size:30px;color:#fff;}
 
 .pageNav {margin:0 0 50px;}
@@ -167,7 +168,22 @@ textarea {
 .tableType1 th:first-child,
 .tableType1 td:first-child {background-image: none;}
 .tableType1 thead th {padding:18px 0 15px;background-color:#1a1a1a;font-size:16px;color:#fff;font-weight:800;}
+.tableType1 tbody th {border-bottom:1px solid #303030;}
 .tableType1 td {height:60px;border-bottom:1px solid #303030;box-sizing:border-box;}
+
+.typeWrite th,
+.typeWrite td {padding:15px 40px;text-align:left;}
+
+.writeTh {width:230px;}
+.pwchTh {width:200px;}
+
+.email .inputTxt {width:140px;}
+.email select {width:140px;}
+.phone .inputTxt {width:60px;padding:0 10px;}
+
+.phoneInput {margin:10px 0 0;}
+.phoneInput .btnType2 {margin:0 0 0 15px;}
+.marktingChk {margin:0 0 0 20px;}
 
 .pagination {margin:30px 0 100px;}
 .pagination strong,
@@ -183,7 +199,8 @@ textarea {
 .btnWrap {margin:30px 0 0;text-align:center;}
 
 .btnType1 {width:160px;line-height:50px;background:#fff227;border-radius:4px;color:#000;font-size:20px;font-weight:bold;}
-.btnType2 {padding:10px 20px 8px;border:1px solid #fff;color:#fff227;border-radius:3px;font-size:15px;}
+.btnType2 {padding:9px 20px 8px;border:1px solid #fff;color:#fff227;border-radius:3px;font-size:15px;}
+.btnType3 {width:160px;line-height:50px;background:#333;border-radius:4px;color:#ccc;font-size:20px;font-weight:bold;}
 
 .bulList li {position:relative;padding:0 0 0 8px;color:#d9d9d9;}
 .bulList li:after {content:"";position:absolute;top:7px;left:0;width:3px;height:3px;border-radius:50%;background:#d9d9d9;}
@@ -198,5 +215,6 @@ textarea {
 .layerPop .layerWrap {position:relative;display:inline-block;margin:20px 0;vertical-align:middle;background:#000;border:1px solid #909090;box-shadow:0 0 50px rgba(255,255,255,.3);text-align:left;}
 .layerPop .layerTitle {padding:25px 30px;font-size:30px;}
 .layerPop .layerContents {padding:30px;}
-.layerPop .layerContents.bg {background:#1a1a1a;}
+.layerPop .layerContents .bg {margin:-30px -30px 0;padding:30px;}
+.layerPop .bg {background:#1a1a1a;}
 .layerPop .btnLayerClose {position:absolute;top:35px;right:30px;width:22px;height:22px;background:url('../images/btn_pop_close.png') no-repeat;font-size:0;}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=2.0, minimum-scale=1.0, target-densitydpi=medium-dpi">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="resource/font/nanumsquareround.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/resp.css" media="screen and (max-width: 1070px)">
+	<script type="text/javascript" src="resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="resource/js/swiper.min.js"></script>
+	<script type="text/javascript" src="resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="wrap">
+
+		<header id="header">
+			<h1><a href="/"><img src="resource/images/img_logo.png" alt=""></a></h1>
+			<nav id="gnb">
+				<p class="mo">
+					<a href="#">마이페이지</a>
+					<a href="#">로그인</a>
+				</p>
+				<ul class="pc">
+					<li><a href="#" onclick="scrollMov(this,'.section1'); return false;">NOW PLAYING</a></li>
+					<li><a href="#" onclick="scrollMov(this,'.section3'); return false;">COMING SOON</a></li>
+					<li class="active"><a href="#">MY PAGE</a></li>
+					<li><a href="#">LOGIN</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="container">
+
+			<section class="section">
+				<h2 class="pageTitle">MY PAGE</h2>
+				<nav class="pageNav">
+					<a href="#" class="active">내 상품권</a>
+					<a href="#">내 정보</a>
+				</nav>
+				<div class="tableType1">
+					<table>
+						<caption>내 상품권 종류</caption>
+						<thead>
+							<tr>
+								<th scope="col">상품권번호</th>
+								<th scope="col">권종</th>
+								<th scope="col">타이틀</th>
+								<th scope="col">교환 가능 기간</th>
+								<th scope="col">상태</th>
+							</tr>
+						</thead>
+						<tbody class="center">
+							<tr>
+								<td>M-1234-1234-1234</td>
+								<td>극장 관람권</td>
+								<td>즐거운 영화 관람하세요.</td>
+								<td>~2019.12.31</td>
+								<td>
+									<a href="#" class="btnType2">교환가능</a>
+								</td>
+							</tr>
+							<tr>
+								<td>M-1234-1234-1234</td>
+								<td>IPTV 쿠폰 5000원권</td>
+								<td>삼성생명FC_장유서.</td>
+								<td>~2019.12.31</td>
+								<td>유효기간 만료</td>
+							</tr>
+							<tr>
+								<td>M-1234-1234-1234</td>
+								<td>IPTV 쿠폰 5000원권</td>
+								<td>삼성생명FC_장유서.</td>
+								<td>~2019.12.31</td>
+								<td>2019.04.01<br>올레TV 교환완료</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="pagination">
+					<a href="#" class="btnStart">처음</a>
+					<a href="#" class="btnPrev">이전</a>
+					<span class="num">
+						<strong>1</strong>
+						<a href="#">2</a>
+					</span>
+					<a href="#" class="btnNext">다음</a>
+					<a href="#" class="btnEnd">끝</a>
+				</div>
+			</section>
+
+			<div class="bgCon">
+				<section class="section">
+					<h3 class="subTitle">이렇게 사용하세요!</h3>
+					<ol class="useProgress">
+						<li>
+							<img src="resource/images/img_use01.png" alt="">
+							<strong><span>01.</span> 상품권 등록</strong>
+							로그인 후 소지하신<br>상품권 번호를 등록합니다.
+						</li>
+						<li>
+							<img src="resource/images/img_use02.png" alt="">
+							<strong><span>02.</span> IPTV 쿠폰 교환</strong>
+							등록된 상품권을 원하는<br>IPTV의 쿠폰으로 교환합니다.
+						</li>
+						<li>
+							<img src="resource/images/img_use03.png" alt="">
+							<strong><span>03.</span> 알림톡 또는 MMS 수신</strong>
+							교환이 완료되면<br>입력한 번호로 알림톡 또는<br>MMS가 전송됩니다.
+						</li>
+						<li>
+							<img src="resource/images/img_use04.png" alt="">
+							<strong><span>04.</span> IPTV 사용</strong>
+							교환받은 쿠폰을<br>IPTV에서 사용합니다.
+						</li>
+					</ol>
+					<div class="alert">
+						<h4 class="title">상품권 교환 시 유의사항</h4>
+						<ul class="bulList">
+							<li class="ftColor1">상품권은 등록 및 교환이 완료 된 후 취소/환불 할 수 없습니다.</li>
+							<li>상품권의 사용기간이 지나면 사용하실 수 없습니다.</li>
+							<li>상품권 번호 앞 4자리가 동일한 상품권은 한 ID 당 4매까지 등록 가능합니다.</li>
+							<li>상품권을 개인, 기업에게 재판매 시 구매금액의 10배를 위약금으로 지불해야 하며 적발 시 ID는 사용이 중지됩니다.</li>
+							<li>상품권은 한 ID 당 연간 20매를 초과하여 등록할 수 없습니다.</li>
+							<li>상품권 등록 후 등록한 번호 및 교환 버튼이 보이지 않을 경우 ‘새로고침(F5)’을 해주세요.</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+			<section class="section ticketUse">
+				<div class="useSel">
+					<h3 class="title">Step 02. 교환을 원하시는 극장을 선택 후 ‘선택완료’를 클릭해주세요.</h3>
+					<div class="sel">
+						<label class="inputRadio">
+							<input type="radio">
+							<span><img src="resource/images/logo_btv.png" alt="B tv"></span>
+						</label>
+						<label class="inputRadio">
+							<input type="radio">
+							<span><img src="resource/images/logo_olleh.png" alt="olleh tv"></span>
+						</label>
+						<label class="inputRadio">
+							<input type="radio">
+							<span><img src="resource/images/logo_uplus.png" alt="uplus tv"></span>
+						</label>
+					</div>
+				</div>
+				<div class="btnWrap">
+					<button type="button" class="btnType1">선택완료</button>
+				</div>
+			</section>
+
+		</div>
+
+		<div class="layerPop" style="display:none;">
+			<section class="layerWrap" style="width:540px;">
+				<h2 class="layerTitle">상품권 교환정보</h2>
+
+				<div class="layerContents bg">
+					<div class="ticketInfo">
+						<img src="resource/images/img_logo_sample.png" alt="">
+						<p class="ftColor1">메가박스 극장 티켓 (평일, 주말 사용권) 1매</p>
+					</div>
+					<div class="ticketInput">
+						<table>
+							<caption>연락처 입력</caption>
+							<tbody>
+								<tr>
+									<th scope="row">이름</th>
+									<td>홍길동</td>
+								</tr>
+								<tr>
+									<th scope="row">휴대폰번호</th>
+									<td>
+										<span class="row phone">
+											<span class="cell"><input type="text" class="inputTxt"></span>
+											<span class="cell">-</span>
+											<span class="cell"><input type="text" class="inputTxt"></span>
+											<span class="cell">-</span>
+											<span class="cell"><input type="text" class="inputTxt"></span>
+										</span>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="layerContents">
+					<p>
+						<label class="inputChk">
+							<input type="checkbox">
+							<span>전체동의</span>
+						</label>
+					</p>
+					<div class="agreenWrap">
+						<p>
+							<label class="inputChk">
+								<input type="checkbox">
+								<span>교환, 환불 정책 확인했습니다.</span>
+							</label>
+						</p>
+						<p>
+							<label class="inputChk">
+								<input type="checkbox">
+								<span>개인정보 제공 동의합니다.</span>
+							</label>
+						</p>
+						<p>
+							<label class="inputChk">
+								<input type="checkbox">
+								<span>(선택) 개인정보활용 제3자 제공 동의</span>
+							</label>
+							<a href="#" class="linkType1">자세히보기</a>
+						</p>
+						<div class="btnWrap">
+							<button type="button" class="btnType1">선택완료</button>
+						</div>
+						<ul class="bulList">
+							<li>한 번 교환된 티켓은 취소할 수 없습니다.</li>
+							<li>쿠폰 교환을 위해 11번가㈜, ㈜KT엠하우스에 개인정보(이름, 연락처)가 전송되며, <br>목적 달성 후 업체별 정책에 따라 일정기간 보관 후 폐기됩니다.</li>
+						</ul>
+					</div>
+					
+				</div>
+				
+				<button type="button" class="btnLayerClose">레이어닫기</button>
+			</section>
+		</div>
+		
+		<footer id="footer">
+			<nav>
+				<a href="#">이용약관</a>
+				<a href="#">개인정보 처리방침</a>
+				<a href="#">상품권 구매문의</a>
+				<a href="#">고객센터/문의하기</a>
+			</nav>
+			<small class="copy">Copyright &copy; 2019 by giftibox.com All rights reserved.</small>
+		</footer>
+
+	</div>
+</body>
+</html>

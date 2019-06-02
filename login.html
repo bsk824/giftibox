@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=2.0, minimum-scale=1.0, target-densitydpi=medium-dpi">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="resource/font/nanumsquareround.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/resp.css" media="screen and (max-width: 1070px)">
+	<script type="text/javascript" src="resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="resource/js/swiper.min.js"></script>
+	<script type="text/javascript" src="resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="wrap">
+
+		<header id="header">
+			<h1><a href="/"><img src="resource/images/img_logo.png" alt=""></a></h1>
+			<nav id="gnb">
+				<p class="mo">
+					<a href="#">마이페이지</a>
+					<a href="#">로그인</a>
+				</p>
+				<ul class="pc">
+					<li><a href="#" onclick="scrollMov(this,'.section1'); return false;">NOW PLAYING</a></li>
+					<li><a href="#" onclick="scrollMov(this,'.section3'); return false;">COMING SOON</a></li>
+					<li><a href="#">MY PAGE</a></li>
+					<li class="active"><a href="#">LOGIN</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="container">
+
+			<div class="layerPop">
+				<section class="layerWrap" style="width:730px;">
+					<h2 class="layerTitle">로그인</h2>
+	
+					<div class="layerContents bg">
+						<fieldset>
+							<legend>로그인</legend>
+							<div>
+								<input type="text" class="inputTxt" placeholder="아이디">
+								<input type="password" class="inputTxt" placeholder="비밀번호">
+								<button class="btnType1">로그인</button>
+							</div>
+							<label class="inputChk">
+								<input type="checkbox">
+								<span>로그인 상태 유지</span>
+							</label>
+							<p>
+								<a href="#" class="ftColor1">회원가입</a>
+								<a href="#">아이디/비밀번호찾기</a>
+							</p>
+						</fieldset>
+						<p class="ad">
+							<a href="#"><img src="resource/images/img_banner2.png" alt=""></a>
+						</p>
+					</div>
+
+					<div class="banner"><a href="#"><img src="resource/images/img_banner.png" alt=""></a></div>
+
+					<button type="button" class="btnLayerClose">레이어닫기</button>
+				</section>
+			</div>
+
+		</div>
+
+		<footer id="footer">
+			<nav>
+				<a href="#">이용약관</a>
+				<a href="#">개인정보 처리방침</a>
+				<a href="#">상품권 구매문의</a>
+				<a href="#">고객센터/문의하기</a>
+			</nav>
+			<small class="copy">Copyright &copy; 2019 by giftibox.com All rights reserved.</small>
+		</footer>
+
+	</div>
+</body>
+</html>

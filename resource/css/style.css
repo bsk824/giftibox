@@ -63,10 +63,11 @@
 .alert {margin:45px 0 0;padding:20px 30px 45px;border-top:1px solid #313131;}
 .alert .title {margin:0 0 10px;}
 
-.tvSel {margin:50px 0 0;padding:30px;border: 1px solid #fff227;}
-.tvSel .title {font-size:24px;color:#fff;}
-.tvSel .sel {margin:40px 0 30px;text-align:center;}
-.tvSel .sel .inputRadio {margin:0 100px;}
+.ticketUse {margin-bottom:100px;}
+.useSel {margin:50px 0 0;padding:30px;border: 1px solid #fff227;}
+.useSel .title {font-size:24px;color:#fff;}
+.useSel .sel {margin:40px 0 30px;text-align:center;}
+.useSel .sel .inputRadio {margin:0 50px;}
 
 .ticketInfo {text-align:center;}
 .ticketInfo img {height:40px;margin: 0 0 15px;}
@@ -75,7 +76,6 @@
 .ticketInput table {table-layout:auto;}
 .ticketInput th {width:120px;padding-left:20px;text-align:left;}
 .ticketInput td {height:50px;}
-.ticketInput .inputTxt {width:60px;padding: 0 10px;}
 
 .agreenWrap {margin:5px 0 0;padding:5px 0 0;border-top:1px solid #2b2b2b;font-size:13px;}
 .agreenWrap p {margin:0 0 5px;}
