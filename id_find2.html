@@ -28,46 +28,47 @@
 				<ul class="pc">
 					<li><a href="#" onclick="scrollMov(this,'.section1'); return false;">NOW PLAYING</a></li>
 					<li><a href="#" onclick="scrollMov(this,'.section3'); return false;">COMING SOON</a></li>
-					<li><a href="#">MY PAGE</a></li>
-					<li class="active"><a href="#">LOGIN</a></li>
+					<li class="active"><a href="#">MY PAGE</a></li>
+					<li><a href="#">LOGIN</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<div id="container">
 
-			<div class="layerPop">
-				<section class="layerWrap" style="width:730px;">
-					<h2 class="layerTitle">로그인</h2>
-	
-					<div class="layerContents bg">
-						<fieldset class="loginField">
-							<legend>로그인</legend>
-							<div class="inputWrap">
-								<input type="text" class="inputTxt" placeholder="아이디">
-								<input type="password" class="inputTxt" placeholder="비밀번호">
-								<button class="btnType1">로그인</button>
-							</div>
-							<label class="inputChk">
-								<input type="checkbox">
-								<span>로그인 상태 유지</span>
-							</label>
-							<p class="">
-								<a href="#" class="ftColor1">회원가입</a>
-								<a href="#">아이디/비밀번호찾기</a>
+			<section class="section">
+				<h2 class="pageTitle">아아디 찾기</h2>
+				<nav class="pageNav">
+					<a href="#">등록된 정보 찾기</a>
+					<a href="#" class="active">본인 인증으로 찾기</a>
+				</nav>
+				<div>
+					<div>
+						<section>
+							<h2>아이핀(i-pin)으로 찾기</h2>
+							<p>
+								발급받은 아이핀(I-PIN)인증 후에 아이디를 찾으려면 <br>[확인]을 클릭하세요.<br>
+								아이핀이 없는 경우 아이핀 신규 발급으로 바로 이용할 수 있습니다.
 							</p>
-						</fieldset>
-						<p class="ad">
-							<a href="#"><img src="resource/images/img_banner2.png" alt=""></a>
-						</p>
+							<div class="btnWrap">
+								<button type="button" class="btnType1">확인</button>
+							</div>
+						</section>
+						<section>
+							<h2>휴대폰 본인 인증</h2>
+							<p>본인 명의 휴대폰으로 아이디를 찾으려면 [확인]을 클릭 하세요.</p>
+							<div class="btnWrap">
+								<button type="button" class="btnType1">확인</button>
+							</div>
+						</section>
 					</div>
-
-					<div class="banner"><a href="#"><img src="resource/images/img_banner.png" alt=""></a></div>
-
-					<button type="button" class="btnLayerClose">레이어닫기</button>
-				</section>
-			</div>
-
+					<ul class="bulList">
+						<li>실명인증으로 가입한 회원도 아이핀 인증 후 아이디를 찾을 수 있습니다.</li>
+						<li>휴대폰 인증의 경우 통신사 사정으로 메시지를 받지 못할 수 있습니다.</li>
+						<li>입력하신 정보는 가입자 본인 확인을 위한 용도외에는 사용되지 않습니다.</li>
+					</ul>
+				</div>
+			</section>
 		</div>
 
 		<footer id="footer">

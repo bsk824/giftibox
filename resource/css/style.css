@@ -80,3 +80,8 @@
 .agreenWrap {margin:5px 0 0;padding:5px 0 0;border-top:1px solid #2b2b2b;font-size:13px;}
 .agreenWrap p {margin:0 0 5px;}
 .agreenWrap .bulList {margin-top:20px;}
+
+.loginField {position:relative;width:330px;}
+.loginField .inputWrap {margin:0 0 3px;padding:0 110px 0 0;}
+.loginField .inputWrap .inputTxt {width:100%;margin:0 0 5px;}
+.loginField .inputWrap .btnType1 {position:absolute;top:0;right:0;width:100px;height:75px;}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=2.0, minimum-scale=1.0, target-densitydpi=medium-dpi">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="resource/font/nanumsquareround.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/resp.css" media="screen and (max-width: 1070px)">
+	<script type="text/javascript" src="resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="resource/js/swiper.min.js"></script>
+	<script type="text/javascript" src="resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="wrap">
+
+		<header id="header">
+			<h1><a href="/"><img src="resource/images/img_logo.png" alt=""></a></h1>
+			<nav id="gnb">
+				<p class="mo">
+					<a href="#">마이페이지</a>
+					<a href="#">로그인</a>
+				</p>
+				<ul class="pc">
+					<li><a href="#" onclick="scrollMov(this,'.section1'); return false;">NOW PLAYING</a></li>
+					<li><a href="#" onclick="scrollMov(this,'.section3'); return false;">COMING SOON</a></li>
+					<li class="active"><a href="#">MY PAGE</a></li>
+					<li><a href="#">LOGIN</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="container">
+
+			<section class="section">
+				<h2 class="pageTitle">새로운 비밀번호 재설정</h2>
+				<nav class="pageNav">
+					<a href="#" class="active">등록된 정보로 재설정</a>
+					<a href="#">본인 인증으로 재설정</a>
+				</nav>
+				<div>
+					<div>
+						<section>
+							<h2>이름/연락처로 재설정</h2>
+							<fieldset>
+								<legend>아이디/이름/휴대폰/이메일 정보 입력</legend>
+								<p>
+									<label class="inputRadio">
+										<input type="radio">
+										<span>휴대폰 또는 전화번호</span>
+									</label>
+									<label class="inputRadio">
+										<input type="radio">
+										<span>이메일</span>
+									</label>
+								</p>
+								<div>
+									<p>
+										<label for="pwResetId">아이디</label>
+										<span>
+											<input type="text" id="pwResetId" class="inputTxt">
+										</span>
+									</p>
+									<p>
+										<label for="pwResetName">이름</label>
+										<span>
+											<input type="text" id="pwResetName" class="inputTxt">
+										</span>
+									</p>
+									<p>
+										<label for="pwResetPhone">휴대폰 또는 전화번호</label>
+										<span class="row phone">
+											<span class="cell"><input type="text" id="pwResetPhone" class="inputTxt"></span>
+											<span class="cell">-</span>
+											<span class="cell"><input type="text" class="inputTxt"></span>
+											<span class="cell">-</span>
+											<span class="cell"><input type="text" class="inputTxt"></span>
+										</span>
+									</p>
+									<p>
+										<label for="pwResetEmail">이메일</label>
+										<span class="row email">
+											<span class="cell"><input type="text" id="pwResetEmail" class="inputTxt"></span>
+											<span class="cell">@</span>
+											<span class="cell">
+												<select name="" id="">
+													<option value="">선택하기</option>
+													<option value="">Naver.com</option>
+													<option value="">Naver.com</option>
+												</select>
+											</span>
+										</span>
+									</p>
+								</div>
+								<div class="btnWrap">
+									<button type="button" class="btnType1">확인</button>
+								</div>
+							</fieldset>
+						</section>
+						<section>
+							<h2>이름/생년월일로 재설정</h2>
+							<fieldset>
+								<legend>이름/생년월일 정보 입력</legend>
+								<div>
+									<p>
+										<label for="pwResetId2">아이디</label>
+										<span>
+											<input type="text" id="pwResetId2" class="inputTxt">
+										</span>
+									</p>
+									<p>
+										<label for="pwResetName2">이름</label>
+										<span>
+											<input type="text" id="pwResetName2" class="inputTxt">
+										</span>
+									</p>
+									<p>
+										<span>성별</span>
+										<label class="inputRadio">
+											<input type="radio">
+											<span>남자</span>
+										</label>
+										<label class="inputRadio">
+											<input type="radio">
+											<span>여자</span>
+										</label>
+									</p>
+									<p>
+										<label for="pwResetBirth">생년월일</label>
+										<span class="row birth">
+											<span class="cell">
+												<select name="" id="pwResetBirth">
+													<option value="">년</option>
+												</select>
+											</span>
+											<span class="cell">
+												<select name="" id="">
+													<option value="">월</option>
+												</select>
+											</span>
+											<span class="cell">
+												<select name="" id="">
+													<option value="">일</option>
+												</select>
+											</span>
+										</span>
+									</p>
+								</div>
+								<div class="btnWrap">
+									<button type="button" class="btnType1">확인</button>
+								</div>
+							</fieldset>
+						</section>
+					</div>
+					<ul class="bulList">
+						<li>회원가입시 입력한 연락처, 이메일 주소, 생년월일을 기억하고 있으면 간단히 아이디를 찾을 수 있습니다.</li>
+						<li>등록된 연락처, 생년월일로 찾기가 안되면 아이핀 또는 휴대폰 본인인증으로도 찾을 수 있습니다.  <a href="#" class="linkType1">본인인증으로 재설정하기 &gt;</a></li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+		<footer id="footer">
+			<nav>
+				<a href="#">이용약관</a>
+				<a href="#">개인정보 처리방침</a>
+				<a href="#">상품권 구매문의</a>
+				<a href="#">고객센터/문의하기</a>
+			</nav>
+			<small class="copy">Copyright &copy; 2019 by giftibox.com All rights reserved.</small>
+		</footer>
+
+	</div>
+</body>
+</html>

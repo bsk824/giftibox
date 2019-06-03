@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=2.0, minimum-scale=1.0, target-densitydpi=medium-dpi">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="resource/font/nanumsquareround.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/common.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/style.css">
+	<link rel="stylesheet" type="text/css" href="resource/css/resp.css" media="screen and (max-width: 1070px)">
+	<script type="text/javascript" src="resource/js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="resource/js/swiper.min.js"></script>
+	<script type="text/javascript" src="resource/js/ui.js"></script>
+	<!--[if lt IE 9]>
+		<script src="resource/js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div id="wrap">
+
+		<header id="header">
+			<h1><a href="/"><img src="resource/images/img_logo.png" alt=""></a></h1>
+			<nav id="gnb">
+				<p class="mo">
+					<a href="#">마이페이지</a>
+					<a href="#">로그인</a>
+				</p>
+				<ul class="pc">
+					<li><a href="#" onclick="scrollMov(this,'.section1'); return false;">NOW PLAYING</a></li>
+					<li><a href="#" onclick="scrollMov(this,'.section3'); return false;">COMING SOON</a></li>
+					<li class="active"><a href="#">MY PAGE</a></li>
+					<li><a href="#">LOGIN</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="container">
+
+			<section class="section">
+				<h2 class="pageTitle">새로운 비밀번호 재설정</h2>
+				<nav class="pageNav">
+					<a href="#">등록된 정보로 재설정</a>
+					<a href="#" class="active">본인 인증으로 재설정</a>
+				</nav>
+				<div>
+					<div>
+						<section>
+							<h2>아이핀(i-pin)으로 찾기</h2>
+							<p>
+								아이핀으로 비밀번호를 재설정 하려면 <span class="ftColor1">giftibox 아이디</span>를 입력하고<br>
+								[확인]을 클릭하세요.<br>
+								아이핀이 없는 경우 아이핀 신규 발급으로 바로 이용할 수 있습니다.
+							</p>
+							<p>
+								<label for="giftiboxId">giftibox 아이디</label>
+								<input type="text" class="inputTxt">
+							</p>
+							<div class="btnWrap">
+								<button type="button" class="btnType1">확인</button>
+							</div>
+						</section>
+						<section>
+							<h2>휴대폰 본인 인증</h2>
+							<p>본인 명의 휴대폰으로 비밀번호를 재설정 하려면 <span class="ftColor1">giftibox 아이디</span>를 <br>입력하고 [확인]을 클릭하세요.</p>
+							<p>
+								<label for="giftiboxId">giftibox 아이디</label>
+								<input type="text" class="inputTxt">
+							</p>
+							<div class="btnWrap">
+								<button type="button" class="btnType1">확인</button>
+							</div>
+						</section>
+					</div>
+					<ul class="bulList">
+						<li>실명인증으로 가입한 회원도 아이핀 인증 후 아이디를 찾을 수 있습니다.</li>
+						<li>휴대폰 인증의 경우 통신사 사정으로 메시지를 받지 못할 수 있습니다.</li>
+						<li>입력하신 정보는 가입자 본인 확인을 위한 용도외에는 사용되지 않습니다.</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+		<footer id="footer">
+			<nav>
+				<a href="#">이용약관</a>
+				<a href="#">개인정보 처리방침</a>
+				<a href="#">상품권 구매문의</a>
+				<a href="#">고객센터/문의하기</a>
+			</nav>
+			<small class="copy">Copyright &copy; 2019 by giftibox.com All rights reserved.</small>
+		</footer>
+
+	</div>
+</body>
+</html>

@@ -29,45 +29,49 @@
 					<li><a href="#" onclick="scrollMov(this,'.section1'); return false;">NOW PLAYING</a></li>
 					<li><a href="#" onclick="scrollMov(this,'.section3'); return false;">COMING SOON</a></li>
 					<li><a href="#">MY PAGE</a></li>
-					<li class="active"><a href="#">LOGIN</a></li>
+					<li><a href="#">LOGIN</a></li>
 				</ul>
 			</nav>
 		</header>
 
 		<div id="container">
 
-			<div class="layerPop">
-				<section class="layerWrap" style="width:730px;">
-					<h2 class="layerTitle">로그인</h2>
-	
-					<div class="layerContents bg">
-						<fieldset class="loginField">
-							<legend>로그인</legend>
-							<div class="inputWrap">
-								<input type="text" class="inputTxt" placeholder="아이디">
-								<input type="password" class="inputTxt" placeholder="비밀번호">
-								<button class="btnType1">로그인</button>
-							</div>
-							<label class="inputChk">
-								<input type="checkbox">
-								<span>로그인 상태 유지</span>
-							</label>
-							<p class="">
-								<a href="#" class="ftColor1">회원가입</a>
-								<a href="#">아이디/비밀번호찾기</a>
-							</p>
-						</fieldset>
-						<p class="ad">
-							<a href="#"><img src="resource/images/img_banner2.png" alt=""></a>
-						</p>
-					</div>
-
-					<div class="banner"><a href="#"><img src="resource/images/img_banner.png" alt=""></a></div>
-
-					<button type="button" class="btnLayerClose">레이어닫기</button>
-				</section>
-			</div>
-
+			<section class="section">
+				<h2 class="pageTitle">고객센터</h2>
+				<nav class="pageNav">
+					<a href="#">1:1 문의</a>
+					<a href="#" class="active">내 문의 내역</a>
+				</nav>
+				<div class="tableType1">
+					<table>
+						<caption>내 문의 내역</caption>
+						<colgroup>
+							<col style="width:20%;">
+							<col>
+							<col style="width:20%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">등록일</th>
+								<th scope="col">제목</th>
+								<th scope="col">상태</th>
+							</tr>
+						</thead>
+						<tbody class="center">
+							<tr>
+								<td>2019-04-08 12:35:45</td>
+								<td>극장 관람권 관련 문의 드려요~</td>
+								<td>회신 완료</td>
+							</tr>
+							<tr>
+								<td>2019-04-08 12:35:45</td>
+								<td>IPTV 쿠폰 5000원권 궁금한 점이 있습니다.</td>
+								<td>고객센터 내용 확인 중</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
 		</div>
 
 		<footer id="footer">

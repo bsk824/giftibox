@@ -4,6 +4,7 @@
 * {margin:0;padding:0;}
 html {height:100%;font-size:62.5%;}
 body {height:100%;background:#000;color:#fff;font:15px/1.5 'NanumSquareRound';-webkit-text-size-adjust:none;word-break:keep-all;}
+pre {font-family:'NanumSquareRound';}
 a {color:inherit;text-decoration:none;}
 li {list-style:none;}
 table {width:100%;border-collapse:collapse;border:0;table-layout:fixed;}
@@ -34,7 +35,7 @@ html {
 ::-webkit-scrollbar-button {display:none;}
 
 .inputTxt, select, textarea {
-	height: 36px;
+	height: 35px;
 	padding: 0 15px;
 	background: none;
 	border: 1px solid #909090;
@@ -89,6 +90,33 @@ textarea {
 .inputChk + .inputChk,
 .inputRadio + .inputRadio {
 	margin-left: 20px;
+}
+
+.inputFile {
+	position: relative;
+	display: inline-block;
+	width: 500px;
+	padding: 0 110px 0 0;
+}
+.inputFile .inputTxt {width: 100%;}
+.inputFile .btnFileUpload {
+	position: absolute;
+	top: 0; right: 0;
+	display: inline-block;
+	cursor: pointer;
+}
+.inputFile .btnFileUpload input[type="file"] {
+	position: fixed;
+	top: 0; left: -9999px;
+	z-index: -1;	
+}
+.inputFile .btnFileUpload span {
+	display: inline-block;
+	padding: 9px 22px 7px;
+	border: 1px solid #fff;
+	color: #fff227;
+	border-radius: 3px;
+	font-size: 13px;
 }
 
 .swiper-container-horizontal {overflow: hidden;}
@@ -180,6 +208,7 @@ textarea {
 .email .inputTxt {width:140px;}
 .email select {width:140px;}
 .phone .inputTxt {width:60px;padding:0 10px;}
+.birth select {width:80px;}
 
 .phoneInput {margin:10px 0 0;}
 .phoneInput .btnType2 {margin:0 0 0 15px;}
