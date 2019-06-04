@@ -4,10 +4,11 @@
 .mainTop:after {content:"";display:inline-block;height:100%;vertical-align:middle;}
 .mainTop .cont {display:inline-block;margin-left:300px;vertical-align:middle;}
 .mainTop .txt {font-size:32px;font-weight:800;}
-.mainTop .inputField {margin:15px 0 10px;padding:15px 20px;background:rgba(255,255,255, .2);border-radius:5px;}
+.mainTop .inputField {position:relative;margin:15px 0 0;padding:15px 20px;background:rgba(255,255,255, .2);border-radius:5px;}
 .mainTop .inputField .inputTxt {width:86px;height:33px;margin:0 3px;padding:4px 0 0;line-height:1;background:none;border:1px solid rgba(255,255,255, .6);border-radius:5px;color:#fff;font-size:26px;text-align:center;vertical-align:middle;}
 .mainTop .inputField .inputTxt:nth-of-type(1) {width:46px;}
 .mainTop .inputField .btn {width:105px;height:33px;margin-left:12px;padding:4px 0;background:#fff;color:#000;border-radius:5px;font-size:18px;font-weight:800;vertical-align:middle;}
+.mainTop .inputField .txt2 {position:absolute;left:0;bottom:-30px;}
 .mainTop .copy {position:absolute;bottom:15px;right:0;left:0;text-align:center;}
 
 .mainSection {position:relative;padding:120px 0 60px;background:#000;color:#fff;}
@@ -29,7 +30,7 @@
 .vodSlide .vodCont a {padding-left:18px;background:url('../images/icon_plus.png') no-repeat 0 35%;color:#fff227;font-size:16px;font-weight:800;}
 .vodSlide .swiper-slide-active .vodCont {opacity:1;}
 
-.slideControl {position:absolute;bottom:150px;right:0;left:0;width:1080px;margin:0 auto;}
+.slideControl {position:absolute;top:800px;right:0;left:0;width:1080px;margin:0 auto;}
 .slideControl button {position:absolute;top:0;width:24px;height:45px;font-size:0;}
 .slideControl .slidePrev {left:0;background:url('../images/btn_slide_prev.png') no-repeat;}
 .slideControl .slideNext {right:0;background:url('../images/btn_slide_next.png') no-repeat;}

@@ -1,1 +1,75 @@
 @charset "utf-8";
+
+#header h1 a {font-size: 0;}
+#header h1 img {height:30px;}
+
+#gnb li {margin-left:15px;font-size:18px;}
+
+#footer {text-align:left;padding:20px;}
+#footer nav {display:block;margin:0;}
+#footer .copy {display:block;margin:10px 0 0;}
+
+.mainTop {height:700px;}
+.mainTop .cont {margin-left:100px;}
+
+.mainSection header {padding:0 100px;}
+
+.vodSlide .vod {width:500px;}
+.vodSlide .swiper-slide {width:500px;}
+.vodSlide .swiper-slide-active .vod {margin:0;}
+.slideControl {width:100%;top:750px;}
+.slideControl .slidePrev {left:20px;}
+.slideControl .slideNext {right:20px;}
+
+@media screen and (max-width:767px) {
+	body {font-size:1.3rem;}
+	input, select, textarea, button {font-size:1.3rem;}
+	.inputTxt, select, textarea {height:2.8rem;padding-right:1.5rem;}
+	#header {height:5rem;}
+	#header h1 {margin-left:.9rem;}
+	#header h1 img {height:3.2rem;}
+	#gnb {right:0;}
+	#gnb .pc {display:none;}
+	#gnb .mo {display:block;}
+	#gnb .mo a {position:absolute;top:.7rem;right:.9rem;width:3.4rem;height:3.4rem;background-size:cover;font-size:0;}
+	#gnb .mo .mypage {background-image:url('../images/icon_mypage.png');}
+	#gnb .mo .login {background-image:url('../images/icon_login.png');}
+
+	.footBanner {display:block;}
+	.footBanner img {width:100%;}
+
+	#footer {padding:1rem;}
+	#footer nav {padding:0;background:none;font-size:0;}
+	#footer nav a {display:inline-block;width:50%;margin:.5rem 0!important;padding:0 0 0 2rem;box-sizing:border-box;font-size:1.4rem;}
+	#footer .copy {margin:.5rem 0 0;font-size:1.2rem;}
+
+	.mainTop {height:54rem;background:url('../images/bg_main_top_m.jpg') no-repeat 100% 100%;background-size:cover;}
+	.mainTop .cont {position:relative;margin-left:2rem;z-index:2;}
+	.mainTop .txt {font-size:1.6rem;}
+	.mainTop .copy {display: none;}
+	.mainTop .inputField {width:22rem;margin:.8rem 0 0;padding:1rem;}
+	.mainTop .inputField .txt2 {position:static;margin:0 0 .5rem;font-size:1.2rem;}
+	.mainTop .inputField .inputTxt {width:5.8rem;margin:0;font-size:1.7rem;}
+	.mainTop .inputField .inputTxt:nth-of-type(1) {width:3.5rem;}
+	.mainTop .inputField .btn {width:22rem;height:3.6rem;margin:1rem 0 0;padding:0;font-size:1.5rem;}
+
+	.mainSection {padding:4rem 0 1rem;}
+	.mainSection header {position:relative;margin:0 1rem 2rem;padding:0;}
+	.mainSection .title {font-size:2.4rem;line-height:1.2;}
+	.mainSection .txt {margin:1rem 0 0;font-size:1.3rem;}
+	.mainSection .sel {position:absolute;top:0;right:0;}
+	.mainSection .sel select {width:6rem;}
+	.mainSection .sel select:first-child {width:9rem;}
+	
+	.vodSlide .vod {width:25rem;}
+	.vodSlide .swiper-slide {width:25rem;height:auto;padding:3rem 0 0;}
+	.vodSlide .swiper-slide-active .vod {transform:scale(1.2);}
+	.vodSlide .vodCont {margin:4rem 0 0;}
+	.vodSlide .vodCont strong {font-size:2rem;}
+	.vodSlide .vodCont span {margin:2rem 0;font-size:1.3rem;}
+	.vodSlide .vodCont a {padding-left:1.6rem;font-size:1.4rem;background-position:0 20%;}
+	.slideControl {top:38rem;}
+	.slideControl button {width:1.6rem;height:3rem;background-size:cover !important;}
+	.slideControl .slidePrev {left:1rem;}
+	.slideControl .slideNext {right:1rem;}
+}
