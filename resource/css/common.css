@@ -19,6 +19,7 @@ address, em {font-style:normal;}
 button {overflow:visible;cursor:pointer;background:none;border:0;border-radius:0;}
 button::-moz-focus-inner {padding:0;border:0;}
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section {display:block;}
+pre {white-space:pre-wrap;}
 html {
 	scrollbar-face-color: #909090;
 	scrollbar-shadow-color: #909090;
@@ -64,8 +65,8 @@ textarea {
 	position: absolute;
 	visibility: hidden;
 }
-.inputChk span:before,
-.inputRadio span:before {
+.inputChk > span:before,
+.inputRadio > span:before {
 	content: "";
 	display: inline-block;
 	width: 18px; height: 18px;
@@ -74,7 +75,7 @@ textarea {
 	border-radius: 3px;
 	vertical-align: middle;
 }
-.inputRadio span:before {border-radius: 50%;}
+.inputRadio > span:before {border-radius: 50%;}
 
 .inputChk img,
 .inputRadio img {vertical-align: middle;}
@@ -201,6 +202,7 @@ textarea {
 
 .typeWrite th,
 .typeWrite td {padding:15px 40px;text-align:left;}
+.typeWrite textarea {height:270px;}
 
 .writeTh {width:230px;}
 .pwchTh {width:200px;}
@@ -208,11 +210,14 @@ textarea {
 .email .inputTxt {width:140px;}
 .email select {width:140px;}
 .phone .inputTxt {width:60px;padding:0 10px;}
+.birth {margin-right:20px;}
 .birth select {width:80px;}
 
-.phoneInput {margin:10px 0 0;}
-.phoneInput .btnType2 {margin:0 0 0 15px;}
+.phoneInput {margin:15px 0 0;}
+.phoneInput .btnType2 {margin:0 0 0 15px;padding:10px 15px;font-size:13px;}
 .marktingChk {margin:0 0 0 20px;}
+
+.helpTxt {margin:0 0 25px;font-size:14px;}
 
 .pagination {margin:30px 0 100px;}
 .pagination strong,
@@ -227,9 +232,15 @@ textarea {
 
 .btnWrap {margin:30px 0 0;text-align:center;}
 
+[class*="btnType"] {display:inline-block;text-align:center;}
 .btnType1 {width:160px;line-height:50px;background:#fff227;border-radius:4px;color:#000;font-size:20px;font-weight:bold;}
 .btnType2 {padding:9px 20px 8px;border:1px solid #fff;color:#fff227;border-radius:3px;font-size:15px;}
 .btnType3 {width:160px;line-height:50px;background:#333;border-radius:4px;color:#ccc;font-size:20px;font-weight:bold;}
+
+.btnShow {margin-left:20px;padding-right:15px;font-size:0;background:url('../images/icon_arrow2.png') no-repeat 100% 50%;}
+.btnShow:after {content:"자세히보기";font-size:15px;}
+.btnShow.active:after {content:"닫기"}
+
 
 .bulList li {position:relative;padding:0 0 0 8px;color:#d9d9d9;}
 .bulList li:after {content:"";position:absolute;top:7px;left:0;width:3px;height:3px;border-radius:50%;background:#d9d9d9;}
@@ -237,13 +248,13 @@ textarea {
 .ftColor1 {color:#fff227 !important;}
 .ftColor1:after {background:#fff227 !important;}
 
-.linkType1 {color:#fff227 !important;text-decoration:underline;}
+.linkType1 {color:#fff227 !important;border-bottom:1px solid #fff227;}
 
 .layerPop {position:fixed;top:0;right:0;bottom:0;left:0;overflow:auto;background:rgba(0,0,0,.7);z-index:1000;text-align:center;}
 .layerPop:after {content:"";display:inline-block;height:100%;vertical-align:middle;}
 .layerPop .layerWrap {position:relative;display:inline-block;margin:20px 0;vertical-align:middle;background:#000;border:1px solid #909090;box-shadow:0 0 50px rgba(255,255,255,.3);text-align:left;}
 .layerPop .layerTitle {padding:25px 30px;font-size:30px;}
-.layerPop .layerContents {padding:30px;}
+.layerPop .layerContents {position:relative;padding:30px;}
 .layerPop .layerContents .bg {margin:-30px -30px 0;padding:30px;}
 .layerPop .bg {background:#1a1a1a;}
 .layerPop .btnLayerClose {position:absolute;top:35px;right:30px;width:22px;height:22px;background:url('../images/btn_pop_close.png') no-repeat;font-size:0;}

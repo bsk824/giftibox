@@ -81,7 +81,51 @@
 .agreenWrap p {margin:0 0 5px;}
 .agreenWrap .bulList {margin-top:20px;}
 
-.loginField {position:relative;width:330px;}
+.loginField {position:relative;width:330px;padding:45px 0;}
 .loginField .inputWrap {margin:0 0 3px;padding:0 110px 0 0;}
 .loginField .inputWrap .inputTxt {width:100%;margin:0 0 5px;}
-.loginField .inputWrap .btnType1 {position:absolute;top:0;right:0;width:100px;height:75px;}
+.loginField .inputWrap .btnType1 {position:absolute;top:45px;right:0;width:100px;height:75px;}
+.loginField .link {margin:15px 0 0;padding:15px 0 0;border-top:1px solid #444;}
+.loginField .link a {margin-right:15px;}
+.loginAd {position:absolute;top:30px;right:30px;width:298px;height:248px;overflow:hidden;}
+
+.allChk {padding:0 0 20px;border-bottom:1px solid #303030;}
+.agreeBox {margin:25px 0 0;}
+.agreeBox .cont {height:130px;margin:10px 0 0;padding:20px;overflow-y:auto;overflow-x:hidden;background:#1a1a1a;}
+.agreeBox .cont pre {display:block;width:100%;font-size:14px;color:#d9d9d9;}
+
+.marketingAgree {padding:20px 50px 20px 270px;border-bottom:1px solid #303030;font-size:14px;line-height:1.8;}
+
+.signUp {display:inline-block;width:590px;height:490px;padding:90px 80px 0 100px;box-sizing:border-box;background:url('../images/bg_sign_up.png') no-repeat;vertical-align:middle;text-align:left;font-weight:700;}
+.signUp .tit {font-size:36px;font-weight:800;}
+.signUp .txt {margin:20px 0 0;font-size:20px;}
+.signUp .link {margin-top:125px;text-align:right;font-size:20px;}
+.signUp .link a {display:inline-block;padding-right:48px;background:url('../images/icon_rarr.png') no-repeat 100% 60%;}
+.signUp .link img {height:36px;vertical-align:-6px;}
+
+.findWrap {padding:40px 0 35px;background:#1a1a1a;}
+.findWrap .box:after {content:"";display:block;clear:both;}
+.findWrap section {position:relative;float:left;width:50%;padding:0 50px;box-sizing:border-box;}
+.findWrap section:after {content:"";position:absolute;top:0;left:0;bottom:0;width:1px;background:#444;}
+.findWrap section:first-child:after {left:auto;right:-1px;}
+.findWrap .title {margin:0 0 20px;font-size:20px;color:#fff227;}
+.findWrap .txt {height:80px;}
+.findWrap .btnType1 {width:120px;height:40px;line-height:40px;font-size:18px;font-weight:800;}
+.findWrap .inputTable th {text-align:left;}
+.findWrap .inputTable td {height:35px;padding:5px 0;}
+.findWrap .inputTable .inputTh1 {width:160px;}
+.findWrap .inputTable .inputTh2 {width:80px;}
+.findWrap .findDesc {margin:40px 0 0;padding:0 50px;font-size:14px;}
+
+.temrsBox {height:460px;overflow:auto;margin:15px 0 0;padding:20px;background:#1a1a1a;color:#d9d9d9;font-size:14px;}
+
+.ticketWrap {margin:15px 0 0;padding:40px 50px;background:#1a1a1a;}
+.ticketWrap .ticketBox {margin:0 -25px;}
+.ticketWrap .ticketBox:after {content:"";display:block;clear:both;}
+.ticketWrap .ticketBox div {float:left;width:50%;box-sizing:border-box;padding:0 25px;font-size:16px;font-weight:800;}
+.ticketWrap .ticketBox img {margin:20px 0 0;width:100%;}
+.ticketWrap .ticketDesc {margin:30px 0 0;padding:30px 0 0;border-top:1px solid #4c4c4c;font-size:14px;}
+.ticketWrap .ticketDesc .bulList {margin:0 0 20px;}
+
+.inquiryWrap {height:400px;background:url('../images/bg_customer.jpg') no-repeat 50%;text-align:center;}
+.inquiryWrap p {padding:120px 0 30px;}

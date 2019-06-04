@@ -42,40 +42,60 @@
 					<a href="#">등록된 정보로 재설정</a>
 					<a href="#" class="active">본인 인증으로 재설정</a>
 				</nav>
-				<div>
-					<div>
+				<div class="findWrap">
+					<div class="box">
 						<section>
-							<h2>아이핀(i-pin)으로 찾기</h2>
-							<p>
+							<h2 class="title">아이핀(i-pin)으로 찾기</h2>
+							<p class="txt">
 								아이핀으로 비밀번호를 재설정 하려면 <span class="ftColor1">giftibox 아이디</span>를 입력하고<br>
 								[확인]을 클릭하세요.<br>
 								아이핀이 없는 경우 아이핀 신규 발급으로 바로 이용할 수 있습니다.
 							</p>
-							<p>
-								<label for="giftiboxId">giftibox 아이디</label>
-								<input type="text" class="inputTxt">
-							</p>
+							<table class="inputTable">
+								<caption>아이디 입력</caption>
+								<colgroup>
+									<col class="inputTh1">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">giftibox 아이디</th>
+										<td><input type="text" class="inputTxt"></td>
+									</tr>
+								</tbody>
+							</table>
 							<div class="btnWrap">
 								<button type="button" class="btnType1">확인</button>
 							</div>
 						</section>
 						<section>
-							<h2>휴대폰 본인 인증</h2>
-							<p>본인 명의 휴대폰으로 비밀번호를 재설정 하려면 <span class="ftColor1">giftibox 아이디</span>를 <br>입력하고 [확인]을 클릭하세요.</p>
-							<p>
-								<label for="giftiboxId">giftibox 아이디</label>
-								<input type="text" class="inputTxt">
-							</p>
+							<h2 class="title">휴대폰 본인 인증</h2>
+							<p class="txt">본인 명의 휴대폰으로 비밀번호를 재설정 하려면 <span class="ftColor1">giftibox 아이디</span>를 <br>입력하고 [확인]을 클릭하세요.</p>
+							<table class="inputTable">
+								<caption>아이디 입력</caption>
+								<colgroup>
+									<col class="inputTh1">
+									<col>
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">giftibox 아이디</th>
+										<td><input type="text" class="inputTxt"></td>
+									</tr>
+								</tbody>
+							</table>
 							<div class="btnWrap">
 								<button type="button" class="btnType1">확인</button>
 							</div>
 						</section>
 					</div>
-					<ul class="bulList">
-						<li>실명인증으로 가입한 회원도 아이핀 인증 후 아이디를 찾을 수 있습니다.</li>
-						<li>휴대폰 인증의 경우 통신사 사정으로 메시지를 받지 못할 수 있습니다.</li>
-						<li>입력하신 정보는 가입자 본인 확인을 위한 용도외에는 사용되지 않습니다.</li>
-					</ul>
+					<div class="findDesc">
+						<ul class="bulList">
+							<li>실명인증으로 가입한 회원도 아이핀 인증 후 아이디를 찾을 수 있습니다.</li>
+							<li>휴대폰 인증의 경우 통신사 사정으로 메시지를 받지 못할 수 있습니다.</li>
+							<li>입력하신 정보는 가입자 본인 확인을 위한 용도외에는 사용되지 않습니다.</li>
+						</ul>
+					</div>
 				</div>
 			</section>
 		</div>
