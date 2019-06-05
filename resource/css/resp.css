@@ -21,10 +21,15 @@
 .slideControl .slidePrev {left:20px;}
 .slideControl .slideNext {right:20px;}
 
+.detail {max-width:700px;padding:150px 0 0;}
+.detailLeft {float:none;width:auto;margin:0 0 20px;padding:0;}
+.detailLeft .date {right:0;}
+.detailRight {float:none;width:auto;padding:0;border:0;}
+
 @media screen and (max-width:767px) {
 	body {font-size:1.3rem;}
 	input, select, textarea, button {font-size:1.3rem;}
-	.inputTxt, select, textarea {height:2.8rem;padding-right:1.5rem;}
+	.inputTxt, select, textarea {height:2.8rem;line-height:3rem;padding-right:1.5rem;}
 	#header {height:5rem;}
 	#header h1 {margin-left:.9rem;}
 	#header h1 img {height:3.2rem;}
@@ -72,4 +77,16 @@
 	.slideControl button {width:1.6rem;height:3rem;background-size:cover !important;}
 	.slideControl .slidePrev {left:1rem;}
 	.slideControl .slideNext {right:1rem;}
+
+	.detail {padding:6rem 2rem 0;}
+	.detailLeft {margin:0 0 1.5rem;}
+	.detailLeft .title {margin:0 7.5rem 1rem 0;font-size:2.4rem;}
+	.detailLeft .date {top:1rem;font-size:1.3rem;}
+
+	.detailRight table {font-size:1.5rem;}
+	.detailRight th {font-weight:700;}
+	.detailRight .movDesc {padding:1rem 0 0;font-size:1.4rem;}
+	.detailRight .movDesc .box {margin:0 -2rem;padding:2rem;}
+	.detailRight .movDesc .box div {height:auto;}
+	.detailRight .movDesc .src {margin:.5rem 0 0;font-size:1.3rem;}
 }

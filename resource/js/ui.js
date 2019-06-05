@@ -60,9 +60,11 @@ function fontSize() {
 function scrollMov(obj, sec) {
 	var $this = $(obj);
 	var section = $(sec);
-	$this.parent().addClass('active').siblings().removeClass('active');
-	$('html, body').animate({'scrollTop' : section.offset().top}, 300);
-
+	if($('main').length){
+		event.preventDefault();
+		$this.parent().addClass('active').siblings().removeClass('active');
+		$('html, body').animate({'scrollTop' : section.offset().top}, 300);
+	}
 }
 
 var slideObj = {};

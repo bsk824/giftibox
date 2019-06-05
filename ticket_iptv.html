@@ -26,8 +26,8 @@
 					<a href="#" class="login">로그인</a>
 				</p>
 				<ul class="pc">
-					<li><a href="#" onclick="scrollMov(this,'.section1'); return false;">NOW PLAYING</a></li>
-					<li><a href="#" onclick="scrollMov(this,'.section3'); return false;">COMING SOON</a></li>
+					<li><a href="#" onclick="scrollMov(this,'.section1');">NOW PLAYING</a></li>
+					<li><a href="#" onclick="scrollMov(this,'.section3');">COMING SOON</a></li>
 					<li class="active"><a href="#">MY PAGE</a></li>
 					<li><a href="#">LOGIN</a></li>
 				</ul>
@@ -36,50 +36,53 @@
 
 		<div id="container">
 
-			<section class="section">
+			<section class="section ticketUse">
 				<h2 class="pageTitle">MY PAGE</h2>
 				<nav class="pageNav">
 					<a href="#" class="active">내 상품권</a>
 					<a href="#">내 정보</a>
 				</nav>
-				<div class="tableType1">
-					<table>
-						<caption>내 상품권 종류</caption>
-						<thead>
-							<tr>
-								<th scope="col">상품권번호</th>
-								<th scope="col">권종</th>
-								<th scope="col">타이틀</th>
-								<th scope="col">교환 가능 기간</th>
-								<th scope="col">상태</th>
-							</tr>
-						</thead>
-						<tbody class="center">
-							<tr>
-								<td>M-1234-1234-1234</td>
-								<td>극장 관람권</td>
-								<td>즐거운 영화 관람하세요.</td>
-								<td>~2019.12.31</td>
-								<td>
-									<a href="#" class="btnType2">교환가능</a>
-								</td>
-							</tr>
-							<tr>
-								<td>M-1234-1234-1234</td>
-								<td>IPTV 쿠폰 5000원권</td>
-								<td>삼성생명FC_장유서.</td>
-								<td>~2019.12.31</td>
-								<td>유효기간 만료</td>
-							</tr>
-							<tr>
-								<td>M-1234-1234-1234</td>
-								<td>IPTV 쿠폰 5000원권</td>
-								<td>삼성생명FC_장유서.</td>
-								<td>~2019.12.31</td>
-								<td>2019.04.01<br>올레TV 교환완료</td>
-							</tr>
-						</tbody>
-					</table>
+
+				<div class="pcList">
+					<div class="tableType1">
+						<table>
+							<caption>내 상품권 종류</caption>
+							<thead>
+								<tr>
+									<th scope="col">상품권번호</th>
+									<th scope="col">권종</th>
+									<th scope="col">타이틀</th>
+									<th scope="col">교환 가능 기간</th>
+									<th scope="col">상태</th>
+								</tr>
+							</thead>
+							<tbody class="center">
+								<tr>
+									<td>M-1234-1234-1234</td>
+									<td>극장 관람권</td>
+									<td>즐거운 영화 관람하세요.</td>
+									<td>~2019.12.31</td>
+									<td>
+										<a href="#" class="btnType2">교환가능</a>
+									</td>
+								</tr>
+								<tr>
+									<td>M-1234-1234-1234</td>
+									<td>IPTV 쿠폰 5000원권</td>
+									<td>삼성생명FC_장유서.</td>
+									<td>~2019.12.31</td>
+									<td>유효기간 만료</td>
+								</tr>
+								<tr>
+									<td>M-1234-1234-1234</td>
+									<td>IPTV 쿠폰 5000원권</td>
+									<td>삼성생명FC_장유서.</td>
+									<td>~2019.12.31</td>
+									<td>2019.04.01<br>올레TV 교환완료</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
 				<div class="pagination">
 					<a href="#" class="btnStart">처음</a>
@@ -90,6 +93,27 @@
 					</span>
 					<a href="#" class="btnNext">다음</a>
 					<a href="#" class="btnEnd">끝</a>
+				</div>
+
+				<div class="useSel">
+					<h3 class="title">Step 02. 교환을 원하시는 극장을 선택 후 ‘선택완료’를 클릭해주세요.</h3>
+					<div class="sel">
+						<label class="inputRadio">
+							<input type="radio">
+							<span><img src="resource/images/logo_btv.png" alt="B tv"></span>
+						</label>
+						<label class="inputRadio">
+							<input type="radio">
+							<span><img src="resource/images/logo_olleh.png" alt="olleh tv"></span>
+						</label>
+						<label class="inputRadio">
+							<input type="radio">
+							<span><img src="resource/images/logo_uplus.png" alt="uplus tv"></span>
+						</label>
+					</div>
+				</div>
+				<div class="btnWrap">
+					<button type="button" class="btnType1">선택완료</button>
 				</div>
 			</section>
 
@@ -131,28 +155,6 @@
 					</div>
 				</section>
 			</div>
-			<section class="section ticketUse">
-				<div class="useSel">
-					<h3 class="title">Step 02. 교환을 원하시는 극장을 선택 후 ‘선택완료’를 클릭해주세요.</h3>
-					<div class="sel">
-						<label class="inputRadio">
-							<input type="radio">
-							<span><img src="resource/images/logo_btv.png" alt="B tv"></span>
-						</label>
-						<label class="inputRadio">
-							<input type="radio">
-							<span><img src="resource/images/logo_olleh.png" alt="olleh tv"></span>
-						</label>
-						<label class="inputRadio">
-							<input type="radio">
-							<span><img src="resource/images/logo_uplus.png" alt="uplus tv"></span>
-						</label>
-					</div>
-				</div>
-				<div class="btnWrap">
-					<button type="button" class="btnType1">선택완료</button>
-				</div>
-			</section>
 
 		</div>
 

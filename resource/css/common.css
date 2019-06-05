@@ -221,7 +221,7 @@ textarea {
 
 .helpTxt {margin:0 0 25px;font-size:14px;}
 
-.pagination {margin:30px 0 100px;}
+.pagination {margin:30px 0 50px;}
 .pagination strong,
 .pagination a {display:inline-block;width:28px;height:28px;padding:4px 0 0;box-sizing:border-box;border:1px solid #808080;border-radius:2px;vertical-align:middle;text-align:center;}
 .pagination strong {background:#b3b3b3;border-color:#b3b3b3;color:#000;}
