@@ -9,6 +9,8 @@
 #footer nav {display:block;margin:0;}
 #footer .copy {display:block;margin:10px 0 0;}
 
+.section {padding:0 20px;}
+
 .mainTop {height:700px;}
 .mainTop .cont {margin-left:100px;}
 
@@ -26,10 +28,20 @@
 .detailLeft .date {right:0;}
 .detailRight {float:none;width:auto;padding:0;border:0;}
 
+.findWrap .txt {height:auto;margin:10px 0;}
+
+.inputTable colgroup {display:none;}
+.inputTable th {display:block;width:100%;}
+.inputTable td {display:block;width:100%;margin:0 0 10px;}
+
 @media screen and (max-width:767px) {
 	body {font-size:1.3rem;}
 	input, select, textarea, button {font-size:1.3rem;}
-	.inputTxt, select, textarea {height:2.8rem;line-height:3rem;padding-right:1.5rem;}
+	.inputTxt, select, textarea {padding:0 1rem;height:2.8rem;line-height:3rem;}
+	select {padding-right:1.5rem;background-size:1.8rem;}
+
+	.moHide {display:none;}
+
 	#header {height:5rem;}
 	#header h1 {margin-left:.9rem;}
 	#header h1 img {height:3.2rem;}
@@ -40,6 +52,8 @@
 	#gnb .mo .mypage {background-image:url('../images/icon_mypage.png');}
 	#gnb .mo .login {background-image:url('../images/icon_login.png');}
 
+	#container {min-height:0;}
+
 	.footBanner {display:block;}
 	.footBanner img {width:100%;}
 
@@ -47,6 +61,63 @@
 	#footer nav {padding:0;background:none;font-size:0;}
 	#footer nav a {display:inline-block;width:50%;margin:.5rem 0!important;padding:0 0 0 2rem;box-sizing:border-box;font-size:1.4rem;}
 	#footer .copy {margin:.5rem 0 0;font-size:1.2rem;}
+
+	.inputChk,
+	.inputRadio {margin-right:1rem;}
+	.inputChk > span:before,
+	.inputRadio > span:before {width:1.6rem;height:1.6rem;margin-right:.5rem;vertical-align:-.3rem;background-size:60%;}
+
+	.inputFile {width:100%;padding-right:10rem;box-sizing:border-box;}
+	.inputFile .btnFileUpload span {padding:.5rem 2rem .2rem;font-size:1.3rem;}
+
+	.section {padding:0 2rem;}
+	.pageTitle {padding:7rem 0 2rem;font-size:2.6rem;}
+	.subTitle {font-size:1.8rem;text-align:left;}
+
+	.btnWrap {display:flex;margin:2.5rem -.5rem 0;}
+	.btnWrap [class*="btnType"] {width:100%;margin:0 .5rem;}
+	.btnType1, .btnType3 {width:100%;line-height:4rem;font-size:1.8rem;}
+	.btnType2 {padding:.7rem 1rem .5rem;font-size:1.3rem;}
+
+	.layerWrap {width:90% !important;}
+	.layerPop .layerTitle {padding:2rem;font-size:2.6rem;}
+	.layerPop .layerContents {padding:1.5rem;}
+	.layerPop .layerContents .bg {margin:-1.5rem -1.5rem 0;padding:1.5rem;}
+	.layerPop .btnLayerClose {top:3rem;right:2rem;}
+
+	table {table-layout:auto;}
+
+	.tableType1 thead th {padding:1rem 0;font-size:1.3rem;font-weight:500;}
+	.tableType1 td {height:auto;padding:1rem;}
+
+	.typeWrite th {background:#1a1a1a;}
+	.typeWrite th, .typeWrite td {padding:1rem;font-size:1.3rem;}
+	.typeWrite td {background:none;}
+	.typeWrite .inputTxt {width:100%;}
+	.typeWrite textarea {height:20rem;}
+
+	.btnShow {margin-left:1rem;padding-right:1.5rem;}
+	.btnShow:after {font-size:1.3rem;}
+	.writeTh {width:10rem;}
+
+	.row {display:table;width:100%;}
+	.row .cell {display:table-cell;}
+	.row .cell .inputTxt {width:100%;}
+
+	.phone .cell {width:33.33%;}
+	.phone .cell:nth-of-type(2n) {width:auto;padding:0 .2rem;text-align:center;}
+	.email .cell {width:45%;}
+	.email .cell:nth-of-type(2) {width:auto;padding:0 .2rem;text-align:center;}
+	.email select {width:100%;}
+	.birth {margin:0 0 1rem;}
+	.birth select {width:100%;}
+	.birth .cell {padding: 0 .2rem;}
+
+	.phoneInput {margin:1rem 0 0;}
+	.phoneInput .btnType2 {display:block;margin:1rem 0 0;padding:.7rem 0 .5rem;font-size:1.3rem;}
+
+	.pageNav {display:flex;margin:0 -.3rem 2rem;}
+	.pageNav a {width:100%;margin:0 .3rem;}
 
 	.mainTop {height:54rem;background:url('../images/bg_main_top_m.jpg') no-repeat 100% 100%;background-size:cover;}
 	.mainTop .cont {position:relative;margin-left:2rem;z-index:2;}
@@ -89,4 +160,93 @@
 	.detailRight .movDesc .box {margin:0 -2rem;padding:2rem;}
 	.detailRight .movDesc .box div {height:auto;}
 	.detailRight .movDesc .src {margin:.5rem 0 0;font-size:1.3rem;}
+
+	.pcList {display: none;}
+	.moList {display: block;margin: 0 0 2rem;}
+	.moList .ticket {padding:2rem 0;}
+	.moList .ticket:nth-of-type(2n) {margin:0 -2rem;padding:2rem;background:#1a1a1a;}
+	.moList .ticket:nth-of-type(2n) thead th {background:#292929;}
+	.stepTit {margin:0 0 1rem;font-size:1.8rem;}
+	.useSel {padding:1.5rem 3rem;text-align:left;}
+	.useSel .title {display:none;}
+	.useSel .sel {margin:0;text-align:left;}
+	.useSel .sel .inputRadio {display:block;margin:1rem 0;}
+	.useSel .sel img {height:1.5rem;}
+
+	.useProgress {margin:1.5rem 0 0;}
+	.useProgress li {float:none;width:auto;height:9rem;margin:0 0 3rem;padding:1rem 0 0 10rem;text-align:left;font-size:1.3rem;}
+	.useProgress li:after {display:none;}
+	.useProgress li img {position:absolute;top:0;left:0;width:9rem;}
+	.useProgress li:nth-of-type(3) br {display: none;}
+	.useProgress strong {margin:0 0 .5rem;font-size:1.6rem;}
+
+	.alert {margin:0;padding:1.5rem 0 3rem;}
+	.alert .title {margin:0 0 1rem;font-size:1.5rem;}
+
+	.ticketInfo img {height:4rem;margin:0 0 1.5rem;}
+	.ticketInput {margin:2.5rem 0 0;padding:1rem 0 0;}
+	.ticketInput th {width:12rem;padding-left:2rem;}
+	.ticketInput td {height:5rem;}
+	.agreenWrap {margin:.5rem 0 0;padding:.5rem 0 0;font-size:1.3rem;}
+
+	.marktingChk {display:block;margin:.5rem 0 0;}
+
+	.loginAd {display:none;}
+	.loginField {width:auto;padding:0;}
+	.loginField .inputWrap {padding:0;}
+	.loginField .inputWrap .inputTxt {height:4rem;line-height:4rem;}
+	.loginField .inputWrap .btnType1 {position:static;width:100%;height:auto;margin:1rem 0;}
+	.layerPop .layerWrap .banner img {width:100%;}
+
+	.allChk {padding:0 0 2rem;}
+	.agreeBox {margin:2rem 0 0;}
+	.agreeBox .cont {height:10rem;margin:.5rem 0 0;padding:1rem;}
+
+	.marketingAgree {padding:1rem;font-size:1.3rem;line-height:1.5;}
+
+	.signUp {width:95%;height:auto;padding:4rem 5rem;background-position:50%;background-size:100%;}
+	.signUp .tit {font-size:2.5rem;}
+	.signUp .txt {margin:1.5rem 0 0;font-size:1.5rem;}
+	.signUp .link {margin-top:6rem;font-size: 2rem;}
+	.signUp .link img {height:3rem;}
+	.signUp .link a {display:block;padding-right:4rem;background-size:3rem;}
+
+	.findWrap {padding:0;background:none;}
+	.findWrap section {float:none;width:100%;margin:0 0 3rem;padding:0;}
+	.findWrap section:after {display:none;}
+	.findWrap .title {margin:0 0 1rem;font-size:2rem;}
+	.findWrap .txt {height:auto;margin:1rem 0;}
+	.findWrap .inputTxt {width:100%;}
+	.findWrap .findDesc {margin:0;padding:0;font-size:1.4rem;}
+	.findWrap .inputTable {table-layout:auto;}
+	.findWrap .inputTable td {height:auto;margin:0 0 .5rem;}
+	.findWrap .inputTable .birth {margin:0;}
+
+	.temrsBox {height:auto;margin:1rem -2rem;padding:2rem;}
+
+	.ticketWrap {padding:0;background:none;}
+	.ticketBox {background:#1a1a1a;}
+	.ticketWrap .ticketBox div {float:none;width:auto;margin:0 2rem;padding:2.5rem 0;font-size:1.6rem;font-weight:500;border-top:1px solid #4c4c4c;}
+	.ticketWrap .ticketBox div:first-child {border:0;}
+	.ticketWrap .ticketBox p span {display:block;}
+	.ticketWrap .ticketBox img {margin:1rem 0 0;}
+	.ticketWrap .ticketDesc {margin:1.5rem 0 0;padding:0;border:0;}
+	.ticketWrap .ticketDesc .bulList {margin:0 0 1rem;}
+	.inquiryWrap {height:30rem;margin:0 -2rem;}
+	.inquiryWrap p {padding:7rem 0 3rem;}
+	.inquiryWrap .btnType1 {width:12rem;}
+
+	.helpTxt {margin:0 0 1rem;font-size:1.3rem;}
+
+	.inquiryList colgroup {display:none;}
+	.inquiryList thead th {padding:1rem;}
+	.inquiryList thead th:first-child {display:none;}
+	.inquiryList thead th:nth-of-type(2) {background-image:none;}
+	.inquiryList tr {position:relative;display:block;width:100%;border-bottom:1px solid #303030;box-sizing:border-box;}
+	.inquiryList tbody tr {padding: 1rem;}
+	.inquiryList th {display:block;padding:1rem;text-align:left;}
+	.inquiryList th:last-child,
+	.inquiryList td:last-child {position:absolute;top:50%;right:0;width:8rem;padding:.5rem;transform:translateY(-50%);text-align:center;box-sizing:border-box;}
+	.inquiryList td {display:block;padding:0;border:0;text-align:left;}
+	.inquiryList td:nth-of-type(2) {background:none;}
 }

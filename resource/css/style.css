@@ -64,6 +64,9 @@
 .alert {margin:45px 0 0;padding:20px 30px 45px;border-top:1px solid #313131;}
 .alert .title {margin:0 0 10px;}
 
+.moList,
+.stepTit {display:none;}
+
 .ticketUse {margin-bottom:50px;}
 .ticketUse .title {font-size:24px;color:#fff;}
 .useSel {padding:30px;border: 1px solid #fff227;}

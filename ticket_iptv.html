@@ -83,18 +83,120 @@
 							</tbody>
 						</table>
 					</div>
-				</div>
-				<div class="pagination">
-					<a href="#" class="btnStart">처음</a>
-					<a href="#" class="btnPrev">이전</a>
-					<span class="num">
-						<strong>1</strong>
-						<a href="#">2</a>
-					</span>
-					<a href="#" class="btnNext">다음</a>
-					<a href="#" class="btnEnd">끝</a>
+					<div class="pagination">
+						<a href="#" class="btnStart">처음</a>
+						<a href="#" class="btnPrev">이전</a>
+						<span class="num">
+							<strong>1</strong>
+							<a href="#">2</a>
+						</span>
+						<a href="#" class="btnNext">다음</a>
+						<a href="#" class="btnEnd">끝</a>
+					</div>
 				</div>
 
+				<div class="moList">
+					<h3 class="stepTit">Step1. <span class="ftColor1">“교환 가능”</span> 상품권을 선택해주세요.</h3>
+					
+					<div class="ticket">
+						<div class="tableType1">
+							<table>
+								<caption>내 상품권 종류</caption>
+								<thead>
+									<tr>
+										<th scope="col">상품권번호</th>
+										<th scope="col">M-1234-1234-1234</th>
+									</tr>
+								</thead>
+								<tbody class="center">
+									<tr>
+										<td>권종</td>
+										<td class="left">IPTV 쿠폰</td>
+									</tr>
+									<tr>
+										<td>타이틀</td>
+										<td class="left">즐거운 영화 관람하세요.</td>
+									</tr>
+									<tr>
+										<td>사용기간</td>
+										<td class="left">2019.04.01~2019.12.31</td>
+									</tr>
+									<tr>
+										<td>상태</td>
+										<td class="left"><a href="#" class="btnType2">교환가능</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="ticket">
+						<div class="tableType1">
+							<table>
+								<caption>내 상품권 종류</caption>
+								<thead>
+									<tr>
+										<th scope="col">상품권번호</th>
+										<th scope="col">M-1234-1234-1234</th>
+									</tr>
+								</thead>
+								<tbody class="center">
+									<tr>
+										<td>권종</td>
+										<td class="left">IPTV 쿠폰</td>
+									</tr>
+									<tr>
+										<td>타이틀</td>
+										<td class="left">즐거운 영화 관람하세요.</td>
+									</tr>
+									<tr>
+										<td>사용기간</td>
+										<td class="left">2019.04.01~2019.12.31</td>
+									</tr>
+									<tr>
+										<td>상태</td>
+										<td class="left">2019.04.01 <br>올레TV 교환완료</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+					<div class="ticket">
+						<div class="tableType1">
+							<table>
+								<caption>내 상품권 종류</caption>
+								<thead>
+									<tr>
+										<th scope="col">상품권번호</th>
+										<th scope="col">M-1234-1234-1234</th>
+									</tr>
+								</thead>
+								<tbody class="center">
+									<tr>
+										<td>권종</td>
+										<td class="left">IPTV 쿠폰</td>
+									</tr>
+									<tr>
+										<td>타이틀</td>
+										<td class="left">즐거운 영화 관람하세요.</td>
+									</tr>
+									<tr>
+										<td>사용기간</td>
+										<td class="left">2019.04.01~2019.12.31</td>
+									</tr>
+									<tr>
+										<td>상태</td>
+										<td class="left">2019.04.01 <br>올레TV 교환완료</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+				</div>
+
+				<h3 class="stepTit">Step2. <span class="ftColor1">IPTV</span>을 선택해주세요.</h3>
 				<div class="useSel">
 					<h3 class="title">Step 02. 교환을 원하시는 극장을 선택 후 ‘선택완료’를 클릭해주세요.</h3>
 					<div class="sel">
@@ -158,7 +260,8 @@
 
 		</div>
 
-		<div class="layerPop" style="display:none;">
+		<!-- 레이어 -->
+		<div class="layerPop">
 			<section class="layerWrap" style="width:540px;">
 				<h2 class="layerTitle">상품권 교환정보</h2>
 
@@ -191,6 +294,7 @@
 						</table>
 					</div>
 				</div>
+				
 				<div class="layerContents">
 					<p>
 						<label class="inputChk">
@@ -229,7 +333,7 @@
 					
 				</div>
 				
-				<button type="button" class="btnLayerClose">레이어닫기</button>
+				<button type="button" class="btnLayerClose" onclick="$('.layerPop').hide();">레이어닫기</button>
 			</section>
 		</div>
 		

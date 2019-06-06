@@ -48,7 +48,7 @@ function deviceChk() {
 	return state;
 }
 function fontSize() {
-	var baseW = 320 / 62.5;
+	var baseW = 375 / 62.5;
 	var winW = win.width();
 	if (winW <= 767) {
 		var fontSize = winW / baseW;
@@ -57,6 +57,15 @@ function fontSize() {
 		html.css('');
 	}
 }
+function fileUpload(obj) {
+	var $this = $(obj);
+	var thisFile = $this[0].files;
+	var thisVal = $this.val();
+	var txtVal = $this.parent().prev('.inputTxt');
+	
+	(thisVal.length > 0 || thisFile.length > 0) ? txtVal.removeClass('error').addClass('active').val(thisVal) : txtVal.removeClass('active').val(thisVal);
+}
+
 function scrollMov(obj, sec) {
 	var $this = $(obj);
 	var section = $(sec);

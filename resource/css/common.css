@@ -59,6 +59,7 @@ textarea {
 .inputRadio {
 	display: inline-block;
 	position: relative;
+	margin-right: 20px;
 }
 .inputChk input,
 .inputRadio input {
@@ -87,10 +88,6 @@ textarea {
 .inputRadio span {
 	display: inline-block;;
 	vertical-align: middle;
-}
-.inputChk + .inputChk,
-.inputRadio + .inputRadio {
-	margin-left: 20px;
 }
 
 .inputFile {
@@ -193,6 +190,7 @@ textarea {
 .pageNav .active {background:#fff227;color:#000;}
 
 [class*="tableType"] .center {text-align:center;}
+[class*="tableType"] .left {text-align:left;}
 
 .tableType1 {overflow:hidden;border-top:1px solid #333;}
 .tableType1 th, .tableType1 td {position:relative;background:url('../images/bg_table_bar.gif') no-repeat 0 50%;}
@@ -250,7 +248,7 @@ textarea {
 .ftColor1 {color:#fff227 !important;}
 .ftColor1:after {background:#fff227 !important;}
 
-.linkType1 {color:#fff227 !important;border-bottom:1px solid #fff227;}
+.linkType1 {display:inline-block;color:#fff227 !important;border-bottom:1px solid #fff227;}
 
 .layerPop {position:fixed;top:0;right:0;bottom:0;left:0;overflow:auto;background:rgba(0,0,0,.7);z-index:1000;text-align:center;}
 .layerPop:after {content:"";display:inline-block;height:100%;vertical-align:middle;}

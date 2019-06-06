@@ -64,7 +64,7 @@
 							</tr>
 							<tr>
 								<th scope="row">비밀번호</th>
-								<td><a href="#" class="btnType2">비밀번호 변경</a></td>
+								<td><button type="button" class="btnType2" onclick="$('#findLayer').show();">비밀번호 변경</a></button>
 							</tr>
 							<tr>
 								<th scope="row">메일</th>
@@ -151,7 +151,7 @@
 			</section>
 		</div>
 
-		<div class="layerPop">
+		<div class="layerPop" id="findLayer" style="display:none;">
 			<section class="layerWrap" style="width:540px;">
 				<h2 class="layerTitle">비밀번호 변경</h2>
 
@@ -193,7 +193,7 @@
 					</div>
 				</div>
 				
-				<button type="button" class="btnLayerClose">레이어닫기</button>
+				<button type="button" class="btnLayerClose" onclick="$('.layerPop').hide();">레이어닫기</button>
 			</section>
 		</div>
 
