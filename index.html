@@ -14,7 +14,26 @@
 	<!--[if lt IE 9]>
 		<script src="resource/js/html5shiv.min.js"></script>
 	<![endif]-->
+	
+	<script type="text/javascript">
+		var tag = document.createElement('script');
+		
+		tag.src = "https://www.youtube.com/iframe_api";
+		
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		
+		var player;
+		function onYouTubeIframeAPIReady(id) {
+			player = new YT.Player('player', {
+				height: '100%',
+				width: '100%',
+				videoId: id
+			});
+		}
+	</script>
 </head>
+
 <body>
 	<div id="wrap">
 
@@ -71,7 +90,7 @@
 							<ul class="swiper-wrapper">
 								<li class="swiper-slide">
 									<span class="vod">
-										<img src="resource/images/sample.jpg" alt="">
+										<img src="resource/images/sample.jpg" alt="" onclick="youtubeOn(this,'8RTHihrs3Ac');">
 									</span>
 									<span class="vodCont">
 										<strong>더 소사이어티</strong>

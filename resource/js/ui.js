@@ -113,3 +113,13 @@ function getCookie(key) {
 	}
 	return val;
 }
+
+
+function youtube(key) {
+	var iframe = '<iframe src="https://www.youtube.com/embed/'+ key +'?amp;autoplay=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+	return iframe;
+}
+function youtubeOn(img, src) {
+	var _this = $(img);
+	_this.parent().addClass('active').append(youtube(src));
+};
