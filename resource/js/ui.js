@@ -87,6 +87,12 @@ function vodSlide(obj) {
 		navigation: {
 			nextEl: '.' + ele + ' .slideNext',
 			prevEl: '.' + ele + ' .slidePrev',
+		},
+		on: {
+			'slideChange' : function() {
+				$('.' + ele).find('iframe').remove();
+				$('.' + ele).find('.active').removeClass('active');
+			}
 		}
 	});
 	slideObj[obj] = slide;
@@ -114,12 +120,30 @@ function getCookie(key) {
 	return val;
 }
 
+var tag = document.createElement('script');
 
-function youtube(key) {
-	var iframe = '<iframe src="https://www.youtube.com/embed/'+ key +'?amp;autoplay=1" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-	return iframe;
+tag.src = "https://www.youtube.com/iframe_api";
+
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady(key) {
+	player = new YT.Player('player', {
+		height: '100%',
+		width: '100%',
+		videoId: key
+	});
 }
+
 function youtubeOn(img, src) {
 	var _this = $(img);
-	_this.parent().addClass('active').append(youtube(src));
+	if(_this.parent().parent().hasClass('swiper-slide-active')) {
+		$('.vodSlide').find('iframe').parent().removeClass('active').find('iframe').remove();
+		_this.parent().addClass('active').append('<div id="player"></div>');
+		onYouTubeIframeAPIReady(src);
+		setTimeout(function(){
+			player.playVideo();
+		},1000)
+	}
 };
